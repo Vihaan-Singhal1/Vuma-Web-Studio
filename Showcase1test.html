@@ -1,0 +1,126 @@
+<!doctype html>
+<!--
+Author: Mikey Rebelo
+Purpose: A comparison of good vs bad web design practices
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Good vs Bad Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: lightgray;
+      }
+
+      .comparison-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 20px;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        align-self: flex-start;
+        margin-left: 3%;
+        text-align: center;
+      }
+
+      img {
+        margin: 20px;
+      }
+      .site-section {
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+
+        border: 3px solid whitesmoke;
+        border-radius: 20px;
+        gap: 5px;
+      }
+      .desktop-view {
+        width: 95%;
+        max-width: 1100px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        height: auto;
+        border: 1px solid white;
+        border-radius: 15px;
+      }
+
+      .mobile-view {
+        width: 40%;
+        height: auto;
+        max-width: 300px;
+        border: 3px solid white;
+        border-radius: 25px;
+      }
+
+      .critique {
+        flex: 1;
+        font-size: 18px;
+        min-width: 300px;
+        max-width: 900px;
+        margin-left: 3%;
+        margin-right: 3%;
+        line-height: 2.5;
+      }
+      .content-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 30px;
+        justify-content: center;
+      }
+      h3 {
+        margin-left: 3%;
+      }
+    </style>
+</head>
+
+<body>
+  <section class="comparison-block">
+    <h2>Comparison between good and bad web design</h2>
+
+   <div class="site-section">
+    <h3>The New York Times</h3>
+    <img src="images/NYCtimes.png" alt="NY Times Desktop" class="desktop-view">
+    
+    <div class="content-row">
+      <img src="images/NYCtimes_mobile.jpg" alt="NY Times Mobile" class="mobile-view">
+      <p class="critique">
+        The new york times website is a great example of good web design as it stays consistent, is easy to navigate, is accessible and works well.
+        It stays consistent by keeping it simple with the same colors and fonts as well as keeping the navigation tools in the same spots.
+        Through that consistency is the navigability due to the tools always available in the top of the screen for desktop or the menu button in the top left for mobile users.
+        It is also very accessible as the change through devices is very smooth transitioning from using size to determine importance to simply putting the most important articles at the top.
+        And whilst compiling all these parts together it misses somewhat with some more minor errors and warning but then again what is development without a few struggles?
+      </p>
+    </div>    
+  </div>
+
+  <div class="site-section">
+    <h3>Amazon</h3>
+    <img src="images/Amazon.png" alt="Amazon Desktop" class="desktop-view">
+    
+    <div class="content-row">
+      <img src="images/Amazon_mobile.jpg" alt="Amazon Mobile" class="mobile-view">
+      <p class="critique">
+        Amazon on the other hand is quite the mess with it's large number of objects cluttering its interface.
+        In terms of consistency it already starts to fail as the layouts change as you navigate through the site with different layouts being used at different points of amazons shopping experience.
+        This leads to quite the problem in navigability as the user gets used to new menus on top of the weird navigation in mobile with a side menu on top of buttons at the top of the screen leaving the user flabbergasted.
+        Furthermore, the accessibility is also quite poor as the transition from desktop to mobile is awkward to say the least with horizontal scrolling components on the mostly vertical scrolling mobile site.
+        On top of all that I even encountered many errors in the console without a single warning even beating the New York times site whilst also not having any more minor errors in the form of warnings.
+        This is to say, in all, Amazon has a quite a bit to improve upon in terms of user experience with one major step they could take being simplifying their interface from the many categories it attempts to show at once.
+      </p>
+    </div>
+  </div>
+  </section>
+</body>
+
+</html>

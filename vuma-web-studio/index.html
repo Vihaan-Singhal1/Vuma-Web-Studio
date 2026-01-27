@@ -1,96 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vuma Web Studio | Home</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <a class="brand" href="index.html">
-        <img src="assets/img/logo.svg" alt="Vuma Web Studio logo" class="brand-logo" />
-        <span>Vuma Web Studio</span>
-      </a>
-      <nav class="nav-links">
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="project.html">Projects</a>
-        <a class="nav-link" href="showcase.html">Showcase</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuma Web Studio | CS 1XD3</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Vuma Web Studio home">
+          <span
+            class="brand-mark"
+            role="img"
+            aria-label="Vuma Web Studio logo"
+          >
+            V
+          </span>
+          <span class="brand-text">VUMA WEB STUDIO</span>
+        </a>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Build with clarity.</p>
-          <h1>VUMA WEB STUDIO</h1>
-          <p class="lead">
+        <ul class="nav-links">
+          <li>
+            <a class="active" href="index.html" aria-current="page">Home</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="showcase.html">Showcase</a></li>
+        </ul>
+
+        <a class="pill" href="about.html">Team</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <!-- Hero background image path is set in css/style.css (.hero) -->
+        <div class="hero-inner">
+          <p class="eyebrow">VUMA WEB STUDIO</p>
+          <h1 id="hero-title">VUMA WEB STUDIO</h1>
+          <p class="subtitle">Build with clarity.</p>
+          <!-- Update the team description text below as needed -->
+          <p class="description">
             We are a 4-person web dev team building a client project for CS 1XD3.
           </p>
-          <div class="button-row">
-            <a class="button primary" href="about.html">Meet the Team</a>
-            <a class="button ghost" href="project.html">View Project</a>
+          <div class="hero-actions">
+            <!-- Update button links here -->
+            <a class="btn btn-primary" href="about.html">ABOUT US</a>
+            <!-- Update button links here -->
+            <a class="btn btn-secondary" href="project.html">OUR PROJECTS</a>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="assets/img/hero.jpg" alt="Team collaborating" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>What we do</h2>
-          <p>We deliver polished web experiences with a student-focused workflow.</p>
+      <section class="services" aria-labelledby="services-title">
+        <div class="section-title">
+          <h2 id="services-title">What We Do</h2>
         </div>
         <div class="card-grid">
           <article class="card">
+            <div class="icon-badge">
+              <img
+                class="icon-img"
+                src="assets/img/icons/design.png"
+                alt="Design icon"
+              />
+            </div>
             <h3>Design</h3>
-            <p>We sketch clear layouts, consistent typography, and accessible visual hierarchy.</p>
+            <p>
+              We craft clean, human-centered interfaces that keep focus on the
+              user and the goal.
+            </p>
           </article>
           <article class="card">
+            <div class="icon-badge">
+              <img
+                class="icon-img"
+                src="assets/img/icons/development.png"
+                alt="Development icon"
+              />
+            </div>
             <h3>Development</h3>
-            <p>We build responsive, maintainable code with semantic HTML and clean CSS.</p>
+            <p>
+              We build responsive, accessible experiences with thoughtful code
+              and solid structure.
+            </p>
           </article>
           <article class="card">
+            <div class="icon-badge">
+              <img
+                class="icon-img"
+                src="assets/img/icons/collaboration.png"
+                alt="Collaboration icon"
+              />
+            </div>
             <h3>Collaboration</h3>
-            <p>We communicate with clients, gather feedback, and iterate with purpose.</p>
+            <p>
+              We align with clients and teammates through open communication and
+              shared momentum.
+            </p>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="section muted">
-      <div class="container">
-        <div class="section-header">
-          <h2>Latest updates</h2>
-          <p>Placeholder updates for upcoming labs.</p>
-        </div>
-        <div class="updates">
-          <article class="update-item">
-            <h3>Update placeholder #1</h3>
-            <p>Summary of our newest milestone will live here.</p>
-          </article>
-          <article class="update-item">
-            <h3>Update placeholder #2</h3>
-            <p>Notes about testing, feedback, and next steps will be added later.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
+    <footer class="site-footer">
       <p>© 2026 Vuma Web Studio • CS 1XD3</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    </footer>
+  </body>
 </html>

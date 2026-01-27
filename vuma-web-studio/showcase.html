@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vuma Web Studio | Showcase</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <a class="brand" href="index.html">
-        <img src="assets/img/logo.svg" alt="Vuma Web Studio logo" class="brand-logo" />
-        <span>Vuma Web Studio</span>
-      </a>
-      <nav class="nav-links">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="project.html">Projects</a>
-        <a class="nav-link active" href="showcase.html">Showcase</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Showcase | Vuma Web Studio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Vuma Web Studio home">
+          <span
+            class="brand-mark"
+            role="img"
+            aria-label="Vuma Web Studio logo"
+          >
+            V
+          </span>
+          <span class="brand-text">VUMA WEB STUDIO</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li>
+            <a class="active" href="showcase.html" aria-current="page"
+              >Showcase</a
+            >
+          </li>
+        </ul>
+
+        <a class="pill" href="about.html">Team</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h1>Showcase</h1>
-          <p>Lab work highlights and placeholders for upcoming exercises.</p>
-        </div>
+    <main class="showcase-page">
+      <section class="page-header" aria-labelledby="showcase-title">
+        <h1 id="showcase-title">Showcase</h1>
+        <p>
+          Links to projects and exercises completed for our CS 1XD3 labs.
+        </p>
+      </section>
 
-        <div class="list-card">
+      <section class="showcase-section" aria-label="Lab work links">
+        <div class="showcase-card">
           <h2>Lab Work</h2>
-          <ul class="link-list">
-            <li><a href="#">Lab 3.2 critique page</a></li>
-            <li><a href="#">Lab 4.2 DOM exercise #1</a></li>
-            <li><a href="#">Lab 4.2 DOM exercise #2</a></li>
-            <li><a href="#">Lab 4.2 DOM exercise #3</a></li>
+          <div class="showcase-divider" aria-hidden="true"></div>
+          <ul class="showcase-list">
+            <li>
+              <a class="showcase-item" href="critique.html">
+                <span class="item-icon" aria-hidden="true">📄</span>
+                <span class="item-title">Lab 3.2 Good vs Bad Website</span>
+                <span class="item-chevron" aria-hidden="true">›</span>
+              </a>
+            </li>
           </ul>
+          <div class="showcase-divider" aria-hidden="true"></div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container">
+    <footer class="site-footer">
       <p>© 2026 Vuma Web Studio • CS 1XD3</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    </footer>
+  </body>
 </html>

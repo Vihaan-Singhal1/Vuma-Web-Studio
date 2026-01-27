@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vuma Web Studio | Projects</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <a class="brand" href="index.html">
-        <img src="assets/img/logo.svg" alt="Vuma Web Studio logo" class="brand-logo" />
-        <span>Vuma Web Studio</span>
-      </a>
-      <nav class="nav-links">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link active" href="project.html">Projects</a>
-        <a class="nav-link" href="showcase.html">Showcase</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Project | Vuma Web Studio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Vuma Web Studio home">
+          <span
+            class="brand-mark"
+            role="img"
+            aria-label="Vuma Web Studio logo"
+          >
+            V
+          </span>
+          <span class="brand-text">VUMA WEB STUDIO</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a class="active" href="project.html" aria-current="page">Projects</a>
+          </li>
+          <li><a href="showcase.html">Showcase</a></li>
+        </ul>
+
+        <a class="pill" href="about.html">Team</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h1>Project Overview</h1>
-          <p>Initial Client Report placeholders for Lab 2.2.</p>
+    <main class="project-page">
+      <header class="project-header">
+        <h1 class="project-title">Our Project</h1>
+      </header>
+
+      <div class="project-layout">
+        <div class="project-col">
+          <article class="project-card">
+            <div class="card-section">
+              <h2>Non-Profit Web App</h2>
+              <p class="card-subtitle">Working with Charity Organization</p>
+            </div>
+            <div class="divider"></div>
+            <div class="card-section">
+              <h3>Project Overview</h3>
+              <ul class="project-list">
+                <li>Welcoming donor and volunteer experience.</li>
+                <li>Clear impact stories and program highlights.</li>
+                <li>Simple access to events and contact info.</li>
+              </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="card-section">
+              <h3>Key Features</h3>
+              <ul class="project-list">
+                <li>Donation flow with clear steps.</li>
+                <li>Volunteer scheduling and signup.</li>
+                <li>Editable sections for staff updates.</li>
+              </ul>
+            </div>
+          </article>
         </div>
 
-        <div class="info-grid">
-          <!-- EDIT CLIENT INFO PLACEHOLDERS BELOW -->
-          <article class="info-block">
-            <h2>Project name</h2>
-            <p>Placeholder text describing the working title of the project.</p>
-          </article>
-          <article class="info-block">
-            <h2>Client name + organizational affiliation</h2>
-            <p>Placeholder text for the client name, organization, and brief background.</p>
-          </article>
-          <article class="info-block">
-            <h2>Target users</h2>
-            <p>Placeholder text describing primary users, devices (mobile/desktop), and needs.</p>
-          </article>
-          <article class="info-block">
-            <h2>Basic static info</h2>
-            <p>Placeholder text for the static content that must appear on the site.</p>
-          </article>
-          <article class="info-block">
-            <h2>Look/feel design elements + what the client does NOT want</h2>
-            <p>Placeholder text outlining aesthetic direction and constraints to avoid.</p>
-          </article>
-          <article class="info-block">
-            <h2>Data to be managed/presented</h2>
-            <ul>
-              <li>Placeholder list item describing the data type.</li>
-              <li>Placeholder list item describing the data type.</li>
-              <li>Placeholder list item describing the data type.</li>
-            </ul>
-          </article>
-          <article class="info-block">
-            <h2>Interactive elements</h2>
-            <ul>
-              <li>Placeholder list item for a required interaction.</li>
-              <li>Placeholder list item for a required interaction.</li>
-              <li>Placeholder list item for a required interaction.</li>
-            </ul>
-          </article>
-          <!-- END EDIT CLIENT INFO PLACEHOLDERS -->
-        </div>
+        <aside class="project-col project-col--side">
+          <div class="project-stack">
+            <article class="project-card project-card--dark">
+              <h3>Client Report</h3>
+              <p class="project-lead">
+                Download the Initial Client Report (PDF).
+              </p>
+              <a
+                class="download-cta"
+                href="assets/reports/initial-client-report.pdf"
+                download
+              >
+                <span class="download-icon" aria-hidden="true">⬇</span>
+                Download Report
+              </a>
+              <!-- TODO: update link when report is uploaded -->
+            </article>
 
-        <div class="cta-panel">
-          <h2>Client Web App Landing Page</h2>
-          <p>Visit the client landing page placeholder for additional lab work.</p>
-          <a class="button primary" href="client/index.html">Open Client Landing Page</a>
-        </div>
+            <article class="project-card">
+              <h3>Client Needs &amp; Goals</h3>
+              <ul class="project-list">
+                <li>Design preferences and content clarity.</li>
+                <li>Data management requirements and reporting.</li>
+                <li>Simple, accessible navigation for all users.</li>
+              </ul>
+            </article>
+
+            <a class="cta-wide" href="./client/index.html">
+              <span class="cta-icon" aria-hidden="true">↗</span>
+              Client Web App Landing Page
+            </a>
+          </div>
+        </aside>
       </div>
-    </section>
-  </main>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container">
+    <footer class="site-footer">
       <p>© 2026 Vuma Web Studio • CS 1XD3</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    </footer>
+  </body>
 </html>

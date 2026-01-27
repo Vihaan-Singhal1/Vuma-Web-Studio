@@ -7,7 +7,7 @@ Project starter for CS 1XD3 Lab 2.2. This static website includes four core page
 - `about.html` — Team
 - `project.html` — Project + initial client report
 - `showcase.html` — Lab showcase
-- `critique.html` — Lab critique placeholder
+
 
 ## Client landing page
 See `client/index.html` for the basic client hero and section placeholders.

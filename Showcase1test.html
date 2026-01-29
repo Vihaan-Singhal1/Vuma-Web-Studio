@@ -11,7 +11,7 @@ Purpose: A comparison of good vs bad web design practices
     <link rel="stylesheet" href="style.css">
     <style>
       body {
-        background-color: lightgray;
+        background-color: #f0f0f0;
       }
 
       .comparison-block {
@@ -34,15 +34,16 @@ Purpose: A comparison of good vs bad web design practices
       img {
         margin: 20px;
       }
+
       .site-section {
         display: flex;
         background-color: white;
         flex-direction: column;
 
-        border: 3px solid whitesmoke;
+        border: 3px solid #f0f0f1;
         border-radius: 20px;
-        gap: 5px;
       }
+
       .desktop-view {
         width: 95%;
         max-width: 1100px;
@@ -51,6 +52,9 @@ Purpose: A comparison of good vs bad web design practices
         height: auto;
         border: 1px solid white;
         border-radius: 15px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, transparent 2%, #e0e0e0 2%, #e0e0e0 98%, transparent 98%) 1;
       }
 
       .mobile-view {
@@ -63,19 +67,23 @@ Purpose: A comparison of good vs bad web design practices
 
       .critique {
         flex: 1;
+        width: 60%;
         font-size: 18px;
-        min-width: 300px;
+        min-width: 500px;
         max-width: 900px;
+        padding-left: 10px;
+        padding-right: 10px;
         margin-left: 3%;
         margin-right: 3%;
         line-height: 2.5;
+        border: 3px solid lightgray;
+        border-radius: 10px;
       }
       .content-row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
-        gap: 30px;
         justify-content: center;
       }
       h3 {
